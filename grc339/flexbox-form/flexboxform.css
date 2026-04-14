@@ -11,20 +11,56 @@ body {
 div.container {
         max-width: 40em;
         margin: 1em;
-        padding 1em;
+        padding: 1em;
 }
 
-/* I have *some* selectors with their declarations in the declaration block. You’ll need more selectors and declaration blocks. */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 1em;
+	padding: .5em 0;
+}
+
+.personal-info ul li label {
+	flex: 0 0 10em;
+}
 
 section.personal-info ul li input[type="text"],
 section ul li input[type="email"],
 section ul li input[type="tel"],
 section ul li select {
-	/* flex: _____;  You need to fill this out and delete the comment.*/
+	flex: 1 0 25em;
 	box-sizing: border-box;
 }
 
+.order ul {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.order ul li {
+	margin-right: 1em;
+	flex: 1 0 15em;
+}
+
+section.order p {
+	margin-top: 0;
+}
+
+.method ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.method ul li {
+	margin-right: 1em;
+	flex: 1 0 15em;
+}
 
 section {
     background: #eee;
@@ -32,14 +68,23 @@ section {
     margin-bottom: 1em;
 }
 
-section p {
-	margin-top: 0;
+
+section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
 }
+
+section.method ul li {
+	flex: 0 0 15em;
+}
+
+
 
 textarea {
 	box-sizing: border-box;
-/*	display: _____;
-	width: _____;  I’m helping you out with the other properties, but you need to figure these two out. (And delete this comment. */
+	display: flex;
+	width: 100%;  
 	height: 6em;
 	background: #fcfcfc;
 	border: 1px solid #e8e8e8;
@@ -48,12 +93,10 @@ textarea {
 	color: #777;
 	}
 
-/* You want to delete this line to make the media query work. Then you’ll only need one declaration block with one declaration in it. You got it, right? You know how to center the content on the page.
 @media only screen and (min-width: 40em) {
-
-  div.container {
-    margin: _____;
-  }
-
+div.container {
+    margin: auto
 }
-➤ Delete this line too. */
+}
+
+
