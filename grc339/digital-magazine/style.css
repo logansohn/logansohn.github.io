@@ -110,6 +110,7 @@ aside section.secondarystory p {
 
     nav ul li{
 		display: inline;
+		margin-top: .5em;
 	}
 
      nav, h1, section.mainstory h2, p, section.secondary h2, section.tertiary h2, article p, figcaption, article h2 {
